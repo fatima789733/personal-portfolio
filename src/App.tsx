@@ -1,19 +1,5 @@
-// import React from "react";
 import CircularPathAnimation from "./components/animations/index.tsx";
-// import logo from "./logo.png";
-
-import {
-  // Moon,
-  // Triangle,
-  // Snowflake,
-  // Settings,
-  // Droplets,
-  // Play,
-  ChevronDown,
-  User,
-  ArrowRight,
-  Menu,
-} from "lucide-react";
+import { ChevronDown, User, ArrowRight, Menu } from "lucide-react";
 
 function App() {
   return (
@@ -40,9 +26,14 @@ function App() {
       </div>
 
       {/* Navigation */}
-      <nav className="relative z-10 flex items-center justify-between px-8 py-6">
-        {/* <img src={logo} alt="logo" /> */}
-        <div className="hidden lg:flex items-center space-x-8 bg-black/30 backdrop-blur-md rounded-full px-8 py-4 ml-[100px] border border-aquamarine/20 shadow-lg">
+      <nav className="relative z-10 flex items-center justify-between px-8 py-6 ">
+        <img
+          src="/logo.png"
+          alt="logo"
+          className="h-8 w-auto sm:h-12 hover:scale-105 transition-transform duration-300"
+        />
+
+        <div className="hidden lg:flex items-center space-x-8 bg-black/30 backdrop-blur-md rounded-full px-8 py-2 border border-aquamarine/20 shadow-lg">
           <a
             href="#"
             className="text-white hover:text-aquamarine transition-colors text-sm font-medium px-3 py-1 rounded-full hover:bg-white/10"
@@ -82,13 +73,6 @@ function App() {
         </div>
 
         <div className="flex items-center space-x-6">
-          <div className="hidden md:flex items-center space-x-3 text-white text-sm bg-black/20 backdrop-blur-sm rounded-full px-4 py-2 border border-aquamarine/30">
-            <span className="font-medium">Protection</span>
-            <ArrowRight className="w-4 h-4 text-aquamarine" />
-            <div className="w-8 h-8 bg-aquamarine/20 rounded-full flex items-center justify-center border border-aquamarine/40">
-              <span className="text-xs font-bold text-aquamarine">U</span>
-            </div>
-          </div>
           <button className="hidden md:flex items-center space-x-2 text-white hover:text-aquamarine transition-colors bg-black/20 backdrop-blur-sm rounded-full px-4 py-2 border border-white/20 hover:border-aquamarine/40">
             <User className="w-4 h-4" />
             <span className="text-sm font-medium">Create Account</span>
@@ -135,7 +119,7 @@ function App() {
               <ArrowRight className="w-5 h-5" />
             </button>
             <button className="bg-black/30 text-[15px] md:text-[18px] backdrop-blur-md hover:bg-black/40 text-white border border-aquamarine/30 hover:border-aquamarine/50 px-4 md:px-10 py-4 rounded-xl font-bold transition-all shadow-lg hover:shadow-aquamarine/20">
-              Discover more
+              Discover More
             </button>
           </div>
         </div>
