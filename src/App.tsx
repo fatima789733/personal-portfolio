@@ -135,7 +135,7 @@ function App() {
               <ArrowRight className="w-5 h-5" />
             </button>
             <button className="bg-black/30 text-[15px] md:text-[18px] backdrop-blur-md hover:bg-black/40 text-white border border-aquamarine/30 hover:border-aquamarine/50 px-4 md:px-10 py-4 rounded-xl font-bold transition-all shadow-lg hover:shadow-aquamarine/20">
-              Discover More
+              Discover test
             </button>
           </div>
         </div>
